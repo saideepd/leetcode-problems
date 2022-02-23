@@ -1,6 +1,7 @@
 /**
  * 217. Contains Duplicate
  * https://leetcode.com/problems/contains-duplicate/
+ * Category: Array, Hash Table, Sorting
  * 
  * @param {number[]} nums
  * @return {boolean}

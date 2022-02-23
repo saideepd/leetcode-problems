@@ -1,6 +1,7 @@
 /**
  * 27. Remove Element
  * https://leetcode.com/problems/remove-element/
+ * Category: Array, Two Pointers
  * 
  * @param {number[]} nums
  * @param {number} val

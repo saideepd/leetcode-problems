@@ -1,6 +1,7 @@
 /**
  * 26. Remove Duplicates from Sorted Array
  * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+ * Category: Array, Two Pointers
  * 
  * @param {number[]} nums
  * @returns {number}

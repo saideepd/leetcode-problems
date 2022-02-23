@@ -1,6 +1,7 @@
 /**
  * 9. Palindrom Number
  * https://leetcode.com/problems/palindrome-number/
+ * Category: Math
  * 
  * @param {number} x
  * @returns {boolean}
