@@ -8,13 +8,24 @@
  * @returns {number[]}
  */
 var twoSum = function (nums, target) {
-    let hash = {};
+    // Hash Table approach
+    // let hash = {};
+    // for (let i = 0; i < nums.length; i++) {
+    //     let remainder = target - nums[i];
+    //     if (hash[nums[i]] !== undefined) {
+    //         return [hash[nums[i]], i];
+    //     }
+    //     hash[remainder] = i;
+    // }
+
+    // Array approach
+    let visited = [];
     for (let i = 0; i < nums.length; i++) {
-        let remainder = target - nums[i];
-        if (hash[nums[i]] !== undefined) {
-            return [hash[nums[i]], i];
-        }
-        hash[remainder] = i;
+        let current = nums[i];
+        if (visited[current] !== undefined)
+            return [visited[current], i];
+        
+        visited[target - current] = i;
     }
 }
 
