@@ -7,7 +7,7 @@
  * @returns {number}
  */
 
-var singelNumber = function (nums) {
+var singleNumber = function (nums) {
     // // Array approach
     // let hash = {};
     // for(let item of nums) {
@@ -27,9 +27,9 @@ var singelNumber = function (nums) {
 }
 
 console.log('Single Number');
-console.log(`[2,2,1]: ${singelNumber([2, 2, 1])}`);
-console.log(`[1]: ${singelNumber([1])}`);
-console.log(`[4,1,2,1,2]: ${singelNumber([4, 1, 2, 1, 2])}`);
+console.log(`[2,2,1]: ${singleNumber([2, 2, 1])}`);
+console.log(`[1]: ${singleNumber([1])}`);
+console.log(`[4,1,2,1,2]: ${singleNumber([4, 1, 2, 1, 2])}`);
 
 /**
  * Output:
