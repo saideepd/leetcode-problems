@@ -1,7 +1,7 @@
 /**
  * 13. Roman to Integer
  * https://leetcode.com/problems/roman-to-integer/
- * Cateogry:
+ * Cateogry: Hash Table, Math, String
  */
 
 var romanToInt = function(s) {
