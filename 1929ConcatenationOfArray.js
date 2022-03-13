@@ -1,6 +1,7 @@
 /**
  * 1929. Concatenation of Array
  * https://leetcode.com/problems/concatenation-of-array/
+ * Category: Array
  * 
  * @params {number[]} nums
  * @returns {number[]}
