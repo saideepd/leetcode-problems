@@ -1,7 +1,7 @@
 /**
  * 1470. Shuffle the Array
  * https://leetcode.com/problems/shuffle-the-array/
- * Category: 
+ * Category: Array
  * 
  * @param {number[]} nums
  * @param {number} n
