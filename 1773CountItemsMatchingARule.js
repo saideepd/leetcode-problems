@@ -19,7 +19,7 @@ var countMatches = function (items, ruleKey, ruleValue) {
 
     // let ruleIndex = ruleHash[ruleKey];
 
-    // return items.map((count, item) => {
+    // return items.reduce((count, item) => {
     //     if (item[ruleIndex] === ruleValue)
     //         count++;
     //     return count;
