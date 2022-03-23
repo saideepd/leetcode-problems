@@ -28,6 +28,7 @@ console.log(`[1,2,4]: ${plusOne([1,2,4])}`);
 console.log(`[4,3,2,1]: ${plusOne([4,3,2,1])}`);
 console.log(`[4,3,2,9]: ${plusOne([4,3,2,9])}`);
 console.log(`[9]: ${plusOne([9])}`);
+console.log(`[1, 9]: ${plusOne([1, 9])}`);
 
 /**
  * Output:
@@ -37,4 +38,5 @@ console.log(`[9]: ${plusOne([9])}`);
  * [4,3,2,1]: 4,3,2,2
  * [4,3,2,9]: 4,3,3,0
  * [9]: 1,0
+ * [1, 9]: 2,0
  */
