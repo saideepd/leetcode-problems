@@ -1,5 +1,6 @@
 /**
  * 1217. Minimum Cost to Move Chips to the Same Position
+ * https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
  * Category: Array, Math, Greedy
  * 
  * @param {number[]} positon
