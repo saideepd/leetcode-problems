@@ -2,17 +2,21 @@
  * 744. Find Smallest Letter Greater Than Target
  * https://leetcode.com/problems/find-smallest-letter-greater-than-target/
  * Category: Array, Binary Search
+ * 
+ * @param {character[]} letters
+ * @param {character} Target
+ * @returns {character}
  */
 
 var nextGreatestLetter = function (letters, target) {
     let start = 0, end = letters.length - 1;
     while (start <= end) {
         // Calculate mid value
-        let mid = start + (end - start) / 2;
+        let mid = parseInt(start + (end - start) / 2)   ;
         // If target is less than mid element, update end pointer
         if (target < letters[mid])
             end = mid - 1;
-        // If target is greater than mid element, update start pointer
+        // If target is less than mid element, update end pointer
         else
             start = mid + 1;
     }
@@ -28,6 +32,7 @@ console.log(`['c', 'f', 'j'], 'c' = ${nextGreatestLetter(['c', 'f', 'j'], 'c')}`
 console.log(`['c', 'f', 'j'], 'd' = ${nextGreatestLetter(['c', 'f', 'j'], 'd')}`);
 console.log(`['c', 'f', 'j'], 'h' = ${nextGreatestLetter(['c', 'f', 'j'], 'h')}`);
 console.log(`['c', 'f', 'j'], 'm' = ${nextGreatestLetter(['c', 'f', 'j'], 'm')}`);
+console.log(`['e','e','e','e','e','e','n','n','n','n'], 'a' = ${nextGreatestLetter(['e','e','e','e','e','e','n','n','n','n'], 'a')}`);
 
 /**
  * Output:
@@ -38,4 +43,5 @@ console.log(`['c', 'f', 'j'], 'm' = ${nextGreatestLetter(['c', 'f', 'j'], 'm')}`
  * ['c', 'f', 'j'], 'd' = f
  * ['c', 'f', 'j'], 'h' = j
  * ['c', 'f', 'j'], 'm' = c
+ * ['e','e','e','e','e','e','n','n','n','n'], 'a' = e
  */
