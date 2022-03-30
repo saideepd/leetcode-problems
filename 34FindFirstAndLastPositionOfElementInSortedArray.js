@@ -13,15 +13,15 @@ var searchRange = function (nums, target) {
 
     // Find first & last index value of target
     // And set the ans array
-    ans[0] = search(nums, target, true);
+    ans[0] = binarySearch(nums, target, true);
     // Try finding last index only if start is not -1 which implies the target does not exist in array
     if (ans[0] != -1)
-        ans[1] = search(nums, target, false);
+        ans[1] = binarySearch(nums, target, false);
 
     return ans;
 }
 
-const search = (nums, target, findStartIndex) => {
+const binarySearch = (nums, target, findStartIndex) => {
     let start = 0, end = nums.length - 1, ans = -1;
 
     while (start <= end) {
