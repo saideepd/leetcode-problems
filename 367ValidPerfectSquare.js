@@ -2,7 +2,7 @@
  * 367. Valid Perfect Square
  * https://leetcode.com/problems/valid-perfect-square/
  * Category: Math, Binary Search
- * @param {number} num
+ * @param {number} x
  * @return {boolean}
  */
 
