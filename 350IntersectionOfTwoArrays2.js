@@ -9,6 +9,7 @@
  */
 
 var intersect = function (nums1, nums2) {
+    // Sort both the arrays
     nums1.sort((a, b) => a - b);
     nums2.sort((a, b) => a - b);
 
