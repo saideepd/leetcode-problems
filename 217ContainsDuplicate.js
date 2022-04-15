@@ -29,6 +29,31 @@ const containsDuplicate = (input) => {
         uniques.add(input[i]);
     }
     return false;
+
+    // Bubble Sort Approach
+    // sort(input);
+    // for (let i = 1; i < input.length; i++) {
+    //     if(input[i] === input[i - 1])
+    //         return true;
+    // }
+    // return false;
+};
+
+const sort = (input) => {
+    let swapped;
+    for (let i = 0; i < input.length - 1; i++) {
+        swapped = false;
+        for (let j = 1; j < input.length - i; j++) {
+            if (input[j] > input[j - 1]) {
+                let temp = input[j];
+                input[j] = input[j - 1];
+                input[j - 1] = temp;
+                swapped = true;
+            }
+        }
+        if (!swapped)
+            break;
+    }
 };
 
 console.log(`[1,2,3,5,7,2]: ${containsDuplicate([1,2,3,5,7,2])}`);
